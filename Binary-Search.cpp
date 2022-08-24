@@ -7,6 +7,9 @@ int BinarySearch(int arr[] , int size, int key){
     int end = size-1;
     int mid = (start+end)/2;
     
+    //instead declare  int mid = start + (end-start)/2;
+    // this case is helpful when the integer exceeds in storage capacity of 3^31
+    
     
     while(start<=end){
         
